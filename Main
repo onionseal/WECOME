@@ -1,0 +1,68 @@
+#colors
+class color:
+   PURPLE = '\033[95m'
+   CYAN = '\033[96m'
+   DARKCYAN = '\033[36m'
+   BLUE = '\033[94m'
+   GREEN = '\033[92m'
+   YELLOW = '\033[93m'
+   RED = '\033[91m'
+   BOLD = '\033[1m'
+   UNDERLINE = '\033[4m'
+   END = '\033[0m'
+
+# beggining of game
+name = input(color.BOLD + color.CYAN + "What is your name? ")
+
+print (color.BOLD + color.CYAN + "Hello", name, ".", " Welcome to WECOME." + color.END) 
+print (color.BOLD + color.CYAN + "As our newest citizen here is a welcome basket." + color.END)
+print (color.BOLD + color.CYAN + "Recieved (Welcome Basket)" + color.END)
+
+print (color.BOLD + color.CYAN + "*I guess i'll walk around now...*" + color.END)
+
+#meets mushroom man
+print (color.BOLD + color.PURPLE + "*you ran into a small mushroom man* \n♥ hello, how are you doing on this fine day? ♥" + color.END)
+
+x = True
+while x == True:
+    feeling = input(color.BOLD + color.CYAN + "*...how am i feeling?...* ")
+    if feeling == "good":
+        print (color.BOLD + color.PURPLE + "Thats good! I wont keep you too long! Goodbye new friend! \nRecived (Welcome Basket)" + color.END)
+        print (color.BOLD + color.CYAN + "Oh yay! Another welcome basket haha..." + color.END)
+        x = False
+    elif feeling == "bad":
+        print (color.BOLD + color.PURPLE + "Oh no! I'm sorry to hear that, you did just arrive here... \nHere. Take this! \nRecieved (Hot Tea and Soup)" + color.END)
+        x = False
+    elif feeling == "weird":
+        print (color.BOLD + color.PURPLE + "Ah, that's normal. The atmosphere around here makes \nme feel a little " + color.END + color.YELLOW + "𝕚𝕟𝕥𝕖𝕣𝕖𝕤𝕥𝕚𝕟𝕘 " +color.END + color.PURPLE + "too. \njust take a breath and keep walking. \nSee you later!" + color.END)
+        x = False
+    elif feeling == "angry":
+        print (color.BOLD + color.PURPLE + "Aw...why are you angry? \nI guess you did just come here out of nowhere. \nIt's okay! Just keep walking around and chill out :)"  + color.END)
+        x = False
+    else:
+        print (color.BOLD + color.CYAN + "Not a valid feeling!!!"  + color.END)
+        
+print (color.BOLD + color.CYAN + "*continues walking...* \n *that was a weird little dude*"  + color.END)
+
+print (color.BOLD + color.CYAN + "*you see a fork in the road \nleft goes down into a dark, wet,\n almost slimey looking cavern, straight looks like a\n normal foresty path that you have been walking on,\nand right seems like it goes to the ocean" + color.END)
+y = True
+while y == True:
+    direction = input(color.BOLD + color.CYAN + "*...which direction...* ")
+    if direction == "left":
+        print (color.BOLD + color.CYAN + "You start walking down the slippery abyss toward the cavern...\nthen you slip and start sliding\nyou start coughing up blood wondering why nobody\n told you about the dangers of WeCome...\nvision fades\nyou die..." + color.END)
+        print (color.BOLD + color.RED + "ＧＡＭＥ ＯＶＥＲ" + color.END)
+        quit()
+    elif direction == "straight":
+        y = False
+        continue
+    elif direction == "right":
+        print (color.BOLD + color.CYAN + "You start walking to the right...\nYou stop before a huge cliff that overlooks the ocean\n*glad i stopped*\nYou find another path that goes along the same path you were taking\nYou walk..." + color.END)
+        y = False
+        continue
+    else:
+        print (color.BOLD + color.CYAN + "Not a direction!!!" + color.END)
+print (color.BOLD + color.CYAN + "You see something (or someone) standing in the distance.\nYou keep walking and it is a huge warrior with a sword on his back." + color.END)
+print (color.BOLD + color.GREEN + "HELLO! IM SO GLAD TO BE SPEAKING TO YOU. \nTHE WELCOMER DID NOT TELL YOU ABOUT THE FORK BACK THERE?\n...WELL DANG, YOU COULDA JUST DIED RIGHT THERE YA KNOW.\nANYWAY, I'M CHOW. THE TOWN WARRIOR.\nI FIGHT THINGS\nBUT NOT YOU OF COURSE HAHA\nI AM GLAD YOU ARE IN OUR TOWN. NICE TO MEET YOU!\nOH YEAH! WHEN YOU COME ACROSS ANOTHER FORK IN THE ROAD\nMAKE SURE YOU STAY ON THE PATH THAT LOOKS LIKE THIS ONE\nYOU MAY DIE IF YOU DON'T. I'LL SEEYA AROUND...HOPEFULLY.")
+print (color.BOLD + color.CYAN + "You keep walking.\n*He was so big! Okay,\n gotta remember to stay on this path.")
+
+
