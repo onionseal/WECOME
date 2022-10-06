@@ -42,9 +42,11 @@ while x == True:
     else:
         print (color.BOLD + color.CYAN + "Not a valid feeling!!!"  + color.END)
         
+#Done with mushroom man interaction
 print (color.BOLD + color.CYAN + "*continues walking...* \n *that was a weird little dude*"  + color.END)
 
-print (color.BOLD + color.CYAN + "*you see a fork in the road \nleft goes down into a dark, wet,\n almost slimey looking cavern, straight looks like a\n normal foresty path that you have been walking on,\nand right seems like it goes to the ocean" + color.END)
+#fork in the road
+print (color.BOLD + color.CYAN + "*you see a fork in the road \nleft goes down into a dark, wet,\nalmost slimey looking cavern, straight looks like a\nnormal foresty path that you have been walking on,\nand right seems like it goes to the ocean" + color.END)
 y = True
 while y == True:
     direction = input(color.BOLD + color.CYAN + "*...which direction...* ")
@@ -64,5 +66,28 @@ while y == True:
 print (color.BOLD + color.CYAN + "You see something (or someone) standing in the distance.\nYou keep walking and it is a huge warrior with a sword on his back." + color.END)
 print (color.BOLD + color.GREEN + "HELLO! IM SO GLAD TO BE SPEAKING TO YOU. \nTHE WELCOMER DID NOT TELL YOU ABOUT THE FORK BACK THERE?\n...WELL DANG, YOU COULDA JUST DIED RIGHT THERE YA KNOW.\nANYWAY, I'M CHOW. THE TOWN WARRIOR.\nI FIGHT THINGS\nBUT NOT YOU OF COURSE HAHA\nI AM GLAD YOU ARE IN OUR TOWN. NICE TO MEET YOU!\nOH YEAH! WHEN YOU COME ACROSS ANOTHER FORK IN THE ROAD\nMAKE SURE YOU STAY ON THE PATH THAT LOOKS LIKE THIS ONE\nYOU MAY DIE IF YOU DON'T. I'LL SEEYA AROUND...HOPEFULLY.")
 print (color.BOLD + color.CYAN + "You keep walking.\n*He was so big! Okay,\n gotta remember to stay on this path.")
+#delay
+for i in range(5):
+    print ("...")
+#village choice
+print (color.BOLD + color.CYAN + "As you continue to walk down the path you see a small village to the right.\n*hmm it looks promising but the guy told me to stay on the straight path*\n*do I dare go right?*" + color.END)
+y = True
+while y == True:
+    direction = input(color.BOLD + color.CYAN + "...")
+    if direction == "straight":
+        print (color.BOLD + color.CYAN + "*alright i am going to continue on the path...*\n*this seems safe...*" + color.END)
+        y = False
+        continue
+    elif direction == "right":
+        print (color.BOLD + color.CYAN + "You continue to the right.\n*I really hope this turns out okay...*\nAs you continue down the path the light goes dimmer, the air becomes colder and you wonder what is happening.\n*maybe i did make the wrong decision...*\nSuddenly the trees, the rocks, the path, and even the sky begins to turn" + color.END)
+        print (color.BOLD + color.RED +"r-e-d." +color.END)
+        print (color.BOLD + color.CYAN + "*...*\n*...*\n*...*\n*...*\n*...*\n*...*\n*...*\n*...*\n*what's happening...i feel like i am floatng...*\n*this is it...*\nEverything fades to black." + color.END)
+        print (color.BOLD + color.RED + "ＧＡＭＥ ＯＶＥＲ" + color.END)
+        quit()
+    else:
+        print (color.BOLD + color.CYAN + "Not a direction!!!" + color.END)
 
-
+print (color.BOLD + color.DARKCYAN + "You are walking down the same old path and you start to remember how you got to WECOME.\nYou remember lying in bed and closing your eyes thining of a place far from earth.\nAs you reach what looks to be the end of the path you see the person who welcomed you in the beginning.\n*why do they look so familiar...?\n*wait that's me!*\nThey begin to talk to you and all you can do is think." + color.END)
+print (color.BOLD + color.CYAN + "Thank you for listening to the town folk, they are just looking out for you.\nWell, I guess you reached the end of the path. It's time to wake up now." + color.END)
+print (color.BOLD + color.UNDERLINE + color.CYAN + "You wake up and question what has just happened but quickly forget as it was all a dream. -Thank you for visiting WECOME-" + color.END)
+quit()
